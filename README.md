@@ -1,11 +1,80 @@
-1: Clone the repository
+# 🧠 AI Image Denoising System
 
-2: Run the command "pip install -r requirements.txt" to install the required packages.
+A Deep Learning based Image Denoising application built using TensorFlow, OpenCV and Streamlit.
 
-2: In the terminal run the command "uvicorn main3:app --reload".
+---
 
-3: This will run the server and you can upload a custom image and denoise.
+## Features
 
-4: The file "main3.py" loads the pretrained model and uses it to denoise.
+- Upload any image
+- Add Gaussian Noise
+- Remove noise using DnCNN
+- Download denoised image
+- Interactive Streamlit interface
+- Adjustable noise level
+- PSNR and SSIM metrics
 
-5: If you want to see the training and testing part open trainTest.ipynb file.
+---
+
+## Technologies
+
+- Python
+- TensorFlow
+- OpenCV
+- NumPy
+- Streamlit
+- Deep Learning
+
+---
+
+## Project Structure
+
+```
+Image Denoising System
+│
+├── app.py
+├── train.py
+├── predict.py
+├── models/
+├── utils/
+├── dataset/
+└── dncnn_model.keras
+```
+
+---
+
+## Installation
+
+```bash
+git clone <repository-link>
+cd Image-Denoising-System
+
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## Model
+
+Model Used:
+
+**DnCNN (Deep Convolutional Neural Network)**
+
+Training:
+
+- Gaussian Noise
+- TensorFlow/Keras
+- MSE Loss
+- Adam Optimizer
+
+---
+
+## Author
+
+**Shambhav Kumar**
